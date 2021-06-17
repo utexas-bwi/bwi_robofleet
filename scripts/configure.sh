@@ -8,8 +8,4 @@ rf_path=$(pwd)
 
 cp ./config/config.bwi$robot_version.hpp ./robofleet_client/src/config.hpp
 export ROS_PACKAGE_PATH=$rf_path/amrl_msgs:$rf_path/robofleet_client:$ROS_PACKAGE_PATH
-cd robofleet_client
-make
-
-
-
+echo "export ROS_PACKAGE_PATH=$rf_path/amrl_msgs:$rf_path/robofleet_client:$ROS_PACKAGE_PATH" >> ~/.bashrc

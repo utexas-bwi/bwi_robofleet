@@ -13,3 +13,8 @@ catkin_package(
 )
 
 include_directories( )
+
+install(PROGRAMS scripts/run_pub.sh DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
+install(PROGRAMS scripts/run_client.sh DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
+install(PROGRAMS scripts/build.sh DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
+install(PROGRAMS scripts/configure.sh DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})

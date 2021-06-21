@@ -1,0 +1,6 @@
+<launch>
+
+	<node name="robofleet_status" pkg="bwi_robofleet" type="run_pub.sh" />
+	<node name="robofleet_client_launcher" pkg="bwi_robofleet" type="run_client.sh" />
+
+</launch>

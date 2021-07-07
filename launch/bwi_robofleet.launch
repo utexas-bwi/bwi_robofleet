@@ -1,5 +1,8 @@
 <launch>
 
+	<!-- ensure non-catkin messages can be found -->
+	<env name="ROS_PACKAGE_PATH" value="$(find bwi_robofleet)/robofleet_client/amrl_msgs:$(optenv ROS_PACKAGE_PATH))" />
+
 	<node name="robofleet_status" pkg="bwi_robofleet" type="run_pub.sh" />
 	<node name="robofleet_client_launcher" pkg="bwi_robofleet" type="run_client.sh" />
 
